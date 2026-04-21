@@ -1,9 +1,10 @@
+def fizzbuzz(n):
+    if n % 15 == 0:
+        return "Fizzbuzz"
+    elif n % 3 == 0:
+        return "Fizz"
+    elif n % 5 == 0:
+        return "Buzz"
+    return str(n)
 for i in range(1, 1001):
-    if i % 3 == 0 and i % 5 == 0:
-        print("FizzBuzz")
-    elif i % 3 == 0:
-        print("Fizz")
-    elif i % 5 == 0:
-        print("Buzz")
-    else:
-        print(i)
+    print(fizzbuzz(i))
